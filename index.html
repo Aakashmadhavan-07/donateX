@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DonateX | Make a Difference</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Donate</span>X
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#donate">Donate</a>
+            <a href="#requests">Requests</a>
+            <a href="#organizations">Organizations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-buttons">
+
+            <button class="login-btn" onclick="openLogin()">
+                Login
+            </button>
+
+            <button class="register-btn" onclick="openRegister()">
+                Register
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                TOGETHER WE CAN MAKE A DIFFERENCE
+            </p>
+
+            <h1>
+                Your Small Help Can
+                <span>Change a Life.</span>
+            </h1>
+
+            <p>
+                Donate clothes, support medical needs, help children
+                and make a positive impact on someone's life.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button onclick="scrollToDonate()">
+                    Donate Now
+                </button>
+
+                <button class="outline-btn"
+                        onclick="scrollToRequests()">
+                    View Requests
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="heart">
+                ♥
+            </div>
+
+            <h2>
+                Be Someone's Reason
+                to Smile
+            </h2>
+
+            <p>
+                Every donation matters.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= IMPACT ================= -->
+
+    <section class="impact">
+
+        <div class="impact-box">
+            <h2>2,450+</h2>
+            <p>Clothes Donated</p>
+        </div>
+
+        <div class="impact-box">
+            <h2>₹12L+</h2>
+            <p>Funds Raised</p>
+        </div>
+
+        <div class="impact-box">
+            <h2>85+</h2>
+            <p>Verified Organizations</p>
+        </div>
+
+        <div class="impact-box">
+            <h2>3,200+</h2>
+            <p>People Helped</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+
+            <div class="about-icon">
+                ❤
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-title">
+                ABOUT DONATEX
+            </p>
+
+            <h2>
+                Small Donations,
+                <span>Big Impact.</span>
+            </h2>
+
+            <p>
+                DonateX is a platform that connects people who want
+                to help with people and organizations that need help.
+            </p>
+
+            <p>
+                You can donate clothes or contribute funds to verified
+                hospitals, orphanages and educational causes.
+            </p>
+
+
+            <!-- CREATOR -->
+
+            <div class="creator-note">
+
+                <span>PROJECT CREATOR</span>
+
+                <h3>
+                    Aakash
+                </h3>
+
+                <p>
+                    Designed and developed as a social-impact
+                    web platform to make giving easier and more
+                    transparent.
+                </p>
+
+            </div>
+
+
+            <button onclick="scrollToDonate()">
+                Start Donating
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DONATION TYPES ================= -->
+
+    <section class="donate-section" id="donate">
+
+        <div class="section-heading">
+
+            <p class="section-title">
+                WAYS TO HELP
+            </p>
+
+            <h2>
+                Choose How You Want
+                <span>To Make A Difference</span>
+            </h2>
+
+        </div>
+
+
+        <div class="donation-cards">
+
+            <!-- CLOTH DONATION -->
+
+            <div class="donation-card">
+
+                <div class="card-icon">
+                    👕
+                </div>
+
+                <h3>
+                    Cloth Donation
+                </h3>
+
+                <p>
+                    Donate your unused clothes to people and
+                    families who need them.
+                </p>
+
+                <button onclick="openClothForm()">
+                    Donate Clothes →
+                </button>
+
+            </div>
+
+
+            <!-- FUND DONATION -->
+
+            <div class="donation-card">
+
+                <div class="card-icon">
+                    💰
+                </div>
+
+                <h3>
+                    Fund Donation
+                </h3>
+
+                <p>
+                    Support verified medical, education,
+                    orphanage and emergency causes.
+                </p>
+
+                <button onclick="openFundForm()">
+                    Donate Funds →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REQUESTS ================= -->
+
+    <section class="requests" id="requests">
+
+        <div class="section-heading">
+
+            <p class="section-title">
+                HELP SOMEONE TODAY
+            </p>
+
+            <h2>
+                Urgent <span>Requests</span>
+            </h2>
+
+        </div>
+
+
+        <div class="request-container">
+
+
+            <!-- MEDICAL -->
+
+            <div class="request-card">
+
+                <div class="request-image medical">
+                    🏥
+                </div>
+
+                <div class="request-content">
+
+                    <span class="category">
+                        Medical
+                    </span>
+
+                    <h3>
+                        Medical Emergency Support
+                    </h3>
+
+                    <p>
+                        Help a patient with urgent medical
+                        treatment expenses.
+                    </p>
+
+                    <div class="verified">
+                        ✓ Verified Organization
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                             style="width:65%">
+                        </div>
+
+                    </div>
+
+                    <div class="money">
+
+                        <span>
+                            ₹32,500 raised
+                        </span>
+
+                        <span>
+                            ₹50,000 goal
+                        </span>
+
+                    </div>
+
+                    <button onclick="donateRequest('Medical Emergency')">
+                        Donate Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <div class="request-card">
+
+                <div class="request-image education">
+                    📚
+                </div>
+
+                <div class="request-content">
+
+                    <span class="category">
+                        Education
+                    </span>
+
+                    <h3>
+                        Education Support
+                    </h3>
+
+                    <p>
+                        Help children continue their education
+                        with books and school supplies.
+                    </p>
+
+                    <div class="verified">
+                        ✓ Verified Organization
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                             style="width:45%">
+                        </div>
+
+                    </div>
+
+                    <div class="money">
+
+                        <span>
+                            ₹18,000 raised
+                        </span>
+
+                        <span>
+                            ₹40,000 goal
+                        </span>
+
+                    </div>
+
+                    <button onclick="donateRequest('Education Support')">
+                        Donate Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORPHANAGE -->
+
+            <div class="request-card">
+
+                <div class="request-image orphanage">
+                    🏠
+                </div>
+
+                <div class="request-content">
+
+                    <span class="category">
+                        Orphanage
+                    </span>
+
+                    <h3>
+                        Children's Home Support
+                    </h3>
+
+                    <p>
+                        Support food, clothing and basic needs
+                        of children.
+                    </p>
+
+                    <div class="verified">
+                        ✓ Verified Organization
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar"
+                             style="width:75%">
+                        </div>
+
+                    </div>
+
+                    <div class="money">
+
+                        <span>
+                            ₹37,500 raised
+                        </span>
+
+                        <span>
+                            ₹50,000 goal
+                        </span>
+
+                    </div>
+
+                    <button onclick="donateRequest('Children Home Support')">
+                        Donate Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ORGANIZATIONS ================= -->
+
+    <section class="organizations" id="organizations">
+
+        <div class="section-heading">
+
+            <p class="section-title">
+                TRUSTED PARTNERS
+            </p>
+
+            <h2>
+                Verified <span>Organizations</span>
+            </h2>
+
+        </div>
+
+
+        <div class="organization-list">
+
+            <div class="organization">
+
+                <div class="org-icon">
+                    🏥
+                </div>
+
+                <h3>
+                    Life Care Hospital
+                </h3>
+
+                <p>
+                    Medical Support
+                </p>
+
+                <span>
+                    ✓ Verified
+                </span>
+
+            </div>
+
+
+            <div class="organization">
+
+                <div class="org-icon">
+                    🏠
+                </div>
+
+                <h3>
+                    Hope Children's Home
+                </h3>
+
+                <p>
+                    Child Welfare
+                </p>
+
+                <span>
+                    ✓ Verified
+                </span>
+
+            </div>
+
+
+            <div class="organization">
+
+                <div class="org-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Future Foundation
+                </h3>
+
+                <p>
+                    Education Support
+                </p>
+
+                <span>
+                    ✓ Verified
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <div>
+
+            <p class="section-title">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Have Questions?
+            </h2>
+
+            <p>
+                We are here to help you.
+            </p>
+
+        </div>
+
+
+        <form onsubmit="sendMessage(event)">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            DonateX
+        </div>
+
+        <p>
+            Making the world better, one donation at a time.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#donate">
+                Donate
+            </a>
+
+            <a href="#requests">
+                Requests
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <!-- DEVELOPER CREDIT -->
+
+        <div class="developer-credit">
+
+            <p>
+                Designed & Developed by
+                <strong>Aakash</strong>
+            </p>
+
+            <span>
+                DonateX © 2026
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-box">
+
+            <button class="close"
+                    onclick="closeModal()">
+                ×
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
